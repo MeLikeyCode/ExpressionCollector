@@ -1,3 +1,10 @@
+#Set up the environment for Kivy
+import os
+os.environ['GST_PLUGIN_PATH'] = r'C:\Other Programs\Kivy\gstreamer\lib\gstreamer-1.0'
+os.environ['GST_REGISTRY'] = r'C:\Other Programs\Kivy\gstreamer\registry.bin'
+os.environ['PATH'] = r'C:\Other Programs\Kivy;C:\Other Programs\Kivy\Python;C:\Other Programs\Kivy\gstreamer\bin;C:\Other Programs\Kivy\MinGW\bin;%PATH%'
+
+
 #Imports
 import kivy.metrics #allows use of kivy.metrics.cm(1), which converts physical sizes to pixels
 from kivy.app import App
